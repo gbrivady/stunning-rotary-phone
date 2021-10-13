@@ -1,11 +1,14 @@
-cmake_minimum_required(VERSION 3.0.0)
+#CMake min version
+cmake_minimum_required(VERSION 3.13)
+
+#Project info
 project(StunningRotaryPhone VERSION 0.1.0)
 
-include(CTest)
-enable_testing()
+#look for sfml
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake/Modules)
+find_package(SFML REQUIRED system window graphics network audio)
+include_directories(${SFML_INCLUDE_DIR})
 
+#add the exes
 add_subdirectory(src)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)

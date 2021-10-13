@@ -2,4 +2,4 @@
 
 Prototype pour fil rouge SCSC
 
-Build using CMake 3.0 +
+Build using CMake 3.13 +
