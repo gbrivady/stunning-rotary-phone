@@ -10,5 +10,5 @@ find_package(SFML REQUIRED system window graphics network audio)
 include_directories(${SFML_INCLUDE_DIR})
 #add the exes
 add_subdirectory(src)
-add_subdirectory(test)
+#add_subdirectory(test)
 

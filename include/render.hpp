@@ -2,11 +2,12 @@
 #define RENDER_HPP
 #include <SFML/Graphics.hpp>
 #include "entity.hpp"
-#include "scene.hpp"
 
-void render_scene(sf::RenderWindow window, scene scene);
+class Scene;
 
-void render_entity(entity entity);
+void render_scene(sf::RenderWindow window, Scene scene);
+
+void render_entity(Entity entity);
 
 
 
