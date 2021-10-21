@@ -1,4 +1,0 @@
-#ifndef PHYSIC_GRAVITY_HPP
-#define PHYSIC_GRAVITY_HPP
-
-#endif
